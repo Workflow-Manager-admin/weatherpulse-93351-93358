@@ -8,7 +8,7 @@ import { useWeather } from '../context/WeatherContext';
  */
 const WeatherSearch = () => {
   const [searchInput, setSearchInput] = useState('');
-  const { fetchWeatherData, favorites, addToFavorites, removeFromFavorites } = useWeather();
+  const { fetchWeatherData, favorites, removeFromFavorites } = useWeather();
 
   const handleSubmit = (e) => {
     e.preventDefault();
