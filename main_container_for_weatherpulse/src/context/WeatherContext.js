@@ -37,7 +37,7 @@ export const WeatherProvider = ({ children }) => {
    * Fetches weather data for the specified location
    * @param {string} searchLocation - The location to fetch weather data for
    */
-  const fetchWeatherData = async (searchLocation) => {
+  const fetchWeatherData = useCallback(async (searchLocation) => {
     if (!searchLocation) return;
     
     setIsLoading(true);
@@ -87,7 +87,7 @@ export const WeatherProvider = ({ children }) => {
       setError('Failed to fetch weather data. Please try again.');
       setIsLoading(false);
     }
-  };
+  }, []);
 
   // PUBLIC_INTERFACE
   /**
