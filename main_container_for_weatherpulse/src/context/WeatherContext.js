@@ -30,7 +30,7 @@ export const WeatherProvider = ({ children }) => {
       // Default to San Francisco if no location is set
       fetchWeatherData('San Francisco');
     }
-  }, []);
+  }, [location, fetchWeatherData]);
 
   // PUBLIC_INTERFACE
   /**

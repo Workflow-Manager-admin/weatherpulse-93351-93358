@@ -85,3 +85,18 @@ src/context/WeatherContext.js
 
 webpack compiled with 1 warning
 Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/context/WeatherContext.js
+  Line 33:6:  React Hook useEffect has a missing dependency: 'location'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/context/WeatherContext.js
+  Line 33:6:  React Hook useEffect has a missing dependency: 'location'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
